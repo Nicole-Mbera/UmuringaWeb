@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.registering{
+    margin-left: 18%;
+    height: 80vh;
+    width: 84%;
+    color: black;
+    position: fixed;
+}
+    .registering h1{
+        font-size: large;
+        margin-top: 3.7%;
+        text-align: center;
+        font-weight: 400;
+    }
+    .labels{
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    .inputs{
+        margin-top: 30px;
+        width: 80%;
+        margin-left: 50px;
+        height: 5.2vh;
+        border: none;
+        box-shadow: 1px 1px 3.5px rgba(128, 128, 128, 0.438);
+    }
+    .submit{
+        float: right;
+        color: black;
+        background-color: grey ;
+        height: 5.5vh;
+        border:none;
+        width: 130px;
+        border-radius: 10px;
+        margin-right: 75px;
+        
+    }

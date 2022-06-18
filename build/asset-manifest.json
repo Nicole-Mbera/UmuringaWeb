@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ad698d2.css",
+    "main.js": "/static/js/main.c3c80b9f.js",
+    "static/js/787.49c5fcf8.chunk.js": "/static/js/787.49c5fcf8.chunk.js",
+    "static/media/manager.png": "/static/media/manager.11aa0ae26862474334aa.png",
+    "static/media/tyres.jpg": "/static/media/tyres.b5abfd85eac2130f2e45.jpg",
+    "static/media/boss.png": "/static/media/boss.de9a770d5149969751b2.png",
+    "static/media/uzuri.jpg": "/static/media/uzuri.0b252dff8c955b0bba28.jpg",
+    "static/media/training.jpg": "/static/media/training.de2d6ebe7a7e36d4316d.jpg",
+    "static/media/pure.jpg": "/static/media/pure.e791868fb71987709869.jpg",
+    "static/media/red.jpg": "/static/media/red.0470915bf128deb91312.jpg",
+    "static/media/shoe.jpg": "/static/media/shoe.aa49719c010448225446.jpg",
+    "static/media/chocolate.jpg": "/static/media/chocolate.fb15e82bfc2f032622fe.jpg",
+    "static/media/logo.jpg": "/static/media/logo.dfd71f36b09554da5ed9.jpg",
+    "index.html": "/index.html",
+    "main.9ad698d2.css.map": "/static/css/main.9ad698d2.css.map",
+    "main.c3c80b9f.js.map": "/static/js/main.c3c80b9f.js.map",
+    "787.49c5fcf8.chunk.js.map": "/static/js/787.49c5fcf8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ad698d2.css",
+    "static/js/main.c3c80b9f.js"
+  ]
+}

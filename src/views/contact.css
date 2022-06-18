@@ -1,0 +1,87 @@
+.divcontiner{
+    background-color:  white; 
+  width: 100%;
+  height: 90vh;
+}
+
+.containerContactus{
+    width: 100%;
+    height: 30vh;
+   background-image: url(../assets/images/contact.png); 
+}
+.containerContactus h1{
+    text-align: center;
+    padding-top: 50px;
+}
+.contactus{
+    width: 100%;
+    height: 66vh;
+     background-color: white;
+     margin-top: 70px;
+     display: flex;
+    
+    
+}
+.contact{
+    width: 50%;
+    height: 50vh;
+    padding: 30px;
+}
+.social-media{
+    /* background-color: aqua; */
+    width: 250px;
+    margin-left: 50px;
+
+}
+.social-media h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    text-align:justify;
+}
+.social-media a{
+    font-size: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.contact p{
+    padding-top: 30px;
+    margin-left: 50px;
+    
+}
+.comments{
+    width: 50%;
+    height: 50vh;
+    
+    /* background-color: blue; */
+}
+.comments form{
+    padding-top: 30px;
+    
+}
+.comments input{
+    border:0px ;
+    width: 60%;
+}
+.comments hr{
+    width: 60%;
+    margin-bottom: 15px;
+}
+.comments a{
+    margin-left: 300px;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.comments button{
+    color: black;
+        background-color:  grey ;
+        height: 5.5vh;
+        border:none;
+        width: 130px;
+        border-radius: 10px;
+        margin-left: 42%;
+}

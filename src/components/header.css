@@ -1,0 +1,35 @@
+.headerContainer{
+    background-color: white;
+    height: 15vh;
+    box-shadow: rgba(128, 128, 128, 0.534) 1px 0px  3px;
+    /* padding: 10px; */
+    display: flex;
+
+}
+.logo{
+   
+    width:20%;
+    height: 18vh;
+    /* background-color: aqua; */
+}
+.logo img{
+    margin-top: -19px;
+    height: 18vh;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.Navbar{
+    display: flex;
+    /* width:90%; */
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.Navbar a{
+    /* margin-right: 0px; */
+    float: right;
+    padding: 27px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
