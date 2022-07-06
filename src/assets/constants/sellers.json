@@ -1,0 +1,38 @@
+[  {"productName":"Mama Africa",
+    "price":"5500",
+    "image":[
+        "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514108/PXL_20220618_144216091.PORTRAIT_vrhjce.jpg",
+        "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514070/PXL_20220521_073136678.PORTRAIT_hsbb8j.jpg",
+        "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514113/PXL_20220521_073105197.PORTRAIT_abollo.jpg"
+       
+    ]
+    
+    
+   
+},
+{
+    "productName":"YUX Tank",
+    "price":"5500",
+    "image":[
+        "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514134/PXL_20220618_142216541_uwqcrj.jpg",
+        "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514092/PXL_20220618_141945899_ecdmoo.jpg",
+        "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514090/PXL_20220618_142256550_yan0q0.jpg"
+      
+    ]
+    
+    
+   
+},
+{
+    "productName":"U-IX Tank",
+    "price":"5500",
+    "image":[
+        "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514131/PXL_20220521_073041921.PORTRAIT_opwkj9.jpg",
+       "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514079/PXL_20220516_054606380.PORTRAIT_iq6rpf.jpg",
+       "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514073/PXL_20220521_073019991.PORTRAIT_abtkx8.jpg"
+    ]
+    
+    
+   
+}
+]

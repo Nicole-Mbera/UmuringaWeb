@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.shop-container h1{
+text-align: center;
+padding-top: 25px;
+font-weight: 300;
+
+}
+.container p{
+color: black;
+font-size: large;
+text-decoration:none;
+text-align: center;
+}

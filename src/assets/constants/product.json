@@ -1,0 +1,28 @@
+[
+    {
+        "ProductName":"Lorem ipsum",
+        "price":"5500",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  ",
+        "productPicture":"https://umulingafashion-api.herokuapp.com/"
+        
+    },
+    {
+       "ProductName":"Lorem ipsum",
+       "price":"3500",
+       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  ",
+       "productPicture":"https://umulingafashion-api.herokuapp.com/"
+    },
+    {
+        "ProductName":"lorem ipsum",
+        "price":"5000",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  ",
+        "productPicture":"https://umulingafashion-api.herokuapp.com/"
+     
+    },
+    {
+        "ProductName":"Shear butter",
+        "price":"5000",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  ",
+        "productPicture":"https://umulingafashion-api.herokuapp.com/"
+    }
+]

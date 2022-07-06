@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.upperSection{
+    width: 90%;
+    background-color: rgba(229, 229, 229, 1);
+    /* height: 50vh; */
+    margin: 3% 5.5%;
+    display: flex;
+
+    
+}
+
+.pic img{
+    width: 100%;
+    height: 53vh;
+    margin-left:74%;
+}
+.words {
+    width: 50%;
+    padding: 70px;
+    /* background-color: chartreuse; */
+}
+.words h1{
+    font-size: x-larger;
+    text-align: center;
+}
+.words p{
+    text-align: center;
+    font-size: larger;
+    margin-top: 10px;
+}
+.lowerSection{
+    padding: 20px;
+    display: flex;
+}
+.firstDiv{
+    margin-left: 150px;
+    width: 30%;
+    padding: 20px;
+    text-align: justify;
+}
+.firstDiv h1{
+    text-align: center;
+    font-size: large;
+}
+
+.artisan h1{
+    text-align: center;
+    font-size: x-larger;
+    font-weight: 600;
+}
+.pic-region{
+    display: flex;
+    flex-direction: wrap;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+.pic-region img{
+    width: 23%;
+    height: 50vh;
+    margin-left: 96px;
+    object-fit: cover;
+}
+.description{
+    display: flex;
+}
+.description h1{
+    margin-left: 96px;
+    width: 23%;
+    font-size: large;
+}
+

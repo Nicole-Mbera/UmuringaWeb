@@ -1,0 +1,76 @@
+.divcontiner{
+    background-color:  white; 
+  width: 100%;
+  height: 90vh;
+}
+
+.containerContactus{
+    width: 100%;
+    height: 30vh;
+   background-image: url(../assets/images/contact.png); 
+}
+.containerContactus h1{
+    text-align: center;
+    padding-top: 50px;
+}
+.contactus{
+    width: 100%;
+    height: 66vh;
+     background-color: white;
+     margin-top: 70px;
+     display: flex;   
+}
+.map-responsive iframe{
+    height:35vh;
+    width:37%;
+    position:absolute;
+}
+.contact{
+    width: 50%;
+    height: 50vh;
+    padding: 30px;
+}
+.social-media{
+    background-color: white;
+   padding: 2px;
+   width: 81%;
+    margin-top: 242px;
+
+    box-shadow: 0px 0px 0px 1.7px rgba(0, 0, 0, 0.253);
+}
+.social-media h1{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 1px;
+    font-weight: 100;
+    color: gray;
+
+}
+
+.circum{
+    margin-top: 8px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(128, 128, 128, 0.514);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 7px;
+    padding: 0.5px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.contact p{
+    padding-top: 30px;
+    margin-left: 50px;
+    
+}
+.comments{
+    width: 50%;
+    height: 50vh;
+    
+    /* background-color: blue; */
+}
+
+

@@ -1,0 +1,102 @@
+[
+    {"productName":"Mama Africa",
+        "price":"6000",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "pic":"https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514108/PXL_20220618_144216091.PORTRAIT_vrhjce.jpg",
+        "image":[
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514108/PXL_20220618_144216091.PORTRAIT_vrhjce.jpg",
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514070/PXL_20220521_073136678.PORTRAIT_hsbb8j.jpg",
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514113/PXL_20220521_073105197.PORTRAIT_abollo.jpg"
+           
+        ]
+        
+        
+       
+    },
+    {
+        "productName":"YUX Tank",
+        "description":"labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+        "price":"7500",
+        "pic":"https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514134/PXL_20220618_142216541_uwqcrj.jpg",
+        "image":[
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514134/PXL_20220618_142216541_uwqcrj.jpg",
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514092/PXL_20220618_141945899_ecdmoo.jpg",
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514090/PXL_20220618_142256550_yan0q0.jpg"
+          
+        ]
+        
+        
+       
+    },
+    {
+        "productName":"U-IX Tank",
+        "price":"6500",
+        "description":"laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+        "pic":"https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514131/PXL_20220521_073041921.PORTRAIT_opwkj9.jpg",
+        "image":[
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514131/PXL_20220521_073041921.PORTRAIT_opwkj9.jpg",
+           "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514079/PXL_20220516_054606380.PORTRAIT_iq6rpf.jpg",
+           "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656514073/PXL_20220521_073019991.PORTRAIT_abtkx8.jpg"
+        ]
+        
+        
+       
+    },
+    {
+        "productName":"Consecteur",
+        "price":"8500",
+        "pic":"https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500558/pure_utmoas.jpg",
+        "description":"laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+        "image":[
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500558/pure_utmoas.jpg",
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500550/chocolate_gnic24.jpg"
+        ]
+        
+        
+       
+    },
+    {
+        "productName":"Sit amet",
+        "price":"7000",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "pic":"https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656499633/kitenge_wejqpk.jpg",
+        "image":[
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500567/kitenge_pnww7g.jpg",
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500567/kitenge_pnww7g.jpg"
+        ]
+        
+        
+       
+    },
+    {
+        "productName":"Ipsum",
+        "price":"6000",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "pic":"https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500550/bw_erxlx7.jpg",
+        "image":[
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500550/bw_erxlx7.jpg",
+           "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500550/bw_erxlx7.jpg"
+        ]
+        
+        
+       
+    },
+   
+    {
+        "productName":"Lorem",
+        "price":"5500",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "pic":"https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500562/red_zlychl.jpg",
+        "image":[
+            "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656589208/Screenshot_19_scujmz.png",
+           "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656500562/red_zlychl.jpg",
+           "https://res.cloudinary.com/umuringa-fashion-code/image/upload/v1656589348/Screenshot_21_crnd2h.png"
+        ]
+        
+        
+        
+       
+    }
+   
+    
+]

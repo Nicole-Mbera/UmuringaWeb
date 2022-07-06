@@ -1,0 +1,28 @@
+
+.photo{
+    height: 40vh;
+    object-fit:contain;
+    /* width: 60%; */
+}
+.content{
+    width: 300px;
+    color: black;
+    background-color: aquamarine;
+}
+.Cart-container{
+    padding:50px;
+    display: flex;
+}
+.button{
+    color: black;
+    background-color:  grey ;
+    height: 5.5vh;
+    border:none;
+    width: 130px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 20%;
+}
+.button a{
+    color: black;
+}
