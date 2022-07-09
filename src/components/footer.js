@@ -17,13 +17,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className="navbarList">
-                <div style={{ marginLeft: "350px" }} className="damn">
+                
                     <a href="/home"> Home </a>
                     <a href="/shop"> Shop</a>
                     <a href="/about"> About us </a>
                     <a href="/contact">Contact us</a>
                     <a href="/impact">Social impact</a>
-                </div>
+               
 
             </div>
         </div>

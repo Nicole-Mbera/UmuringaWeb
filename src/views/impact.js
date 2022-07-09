@@ -69,11 +69,11 @@ const Impact = () => {
     <h1>Grace Uwase</h1>
     <h1> Anaclet Tuyishimire</h1>
 </div>
-<div className="description">
+{/* <div className="description">
     <h1> Chief Executive Officer</h1>
     <h1>Management Director</h1>
     <h1> Marketing department manager</h1>
-</div>
+</div> */}
                 </div>
             </Homelayout>
         </div>

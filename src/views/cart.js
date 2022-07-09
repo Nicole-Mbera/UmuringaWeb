@@ -36,20 +36,22 @@ const Cart = ({ data }) => {
         <>
 
             <div className="Cart-container">
-                <div className="photo">
+                <div>
 
-                    <Carousel autoplay style={{ width: "500px", height: "30vh", paddingRight: "15%" }}>
+
+                    <Carousel autoplay style={{ width: "500px", height: "20vh", paddingRight: "15%" }} >
                         {data.image.map((image) => (
                             <img src={image} />
                         ))}
 
                     </Carousel>
                 </div>
-                <div style={{ width: "50%", }}>
+                
+                <div style={{ width: "50%" }} >
                     <h3>{data.productName}</h3>
                     <p>{data.description}</p>
                     <p> Price: {data.price}  RWF </p>
-                    <button className='button'><a href='#' onClick={openNotification}>add to cart</a></button>
+                    <button className='button'><a href='#' onClick={openNotification}>order now</a></button>
                 </div>
 
             </div>
