@@ -1,23 +1,24 @@
 .footerContainer{
-    margin-top: 40px;
-    height: 30vh;
+    /* margin-top: 40px; */
+    /* height: 30vh; */
     width: 100%;
 }
 .stayConnected{
     background-color: grey;
 }
 .social{
-    margin-left: 562px;
+    /* margin-left: 562px; */
     padding-bottom: 3px;
+    /* background-color: blue; */
+    display: flex;
+    gap:13px;
+    justify-content: center;
 }
 .circle{
-    margin-top: 8px;
-    height: 40px;
-    width: 40px;
+    /* margin-top: 8px; */
     background-color: white;
     border-radius: 50%;
     display: inline-block;
-    margin-left: 13px;
     padding: 0.5px;
     }
 .social a{
@@ -39,13 +40,73 @@
 .navbarList{
     margin-top: 1.35px;
     background-color: gray ;
-    padding: 47px;
-    
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+
 }
 .navbarList a{
     float:inline-start;
     padding: 27px;
     color: black;
     text-decoration: none;
-    font-size: 15px;
+    /* font-size: 15px; */
 }
+
+@media (max-width:612px){
+    .navbarList {
+        padding: 18px;
+        
+    }
+    .navbarList a{
+        padding: 10px;
+    }
+    .stayConnected h1{
+        font-size: 15px;
+        font-weight: 350;
+        
+    }
+    .social a{
+        font-size: 18px;
+        padding: 5px;
+        
+    }
+    
+}
+
+@media(max-width:414px) {
+    .navbarList {
+        padding: 12px;
+        
+    }
+    .navbarList a{
+        padding: 5px;
+    }
+    .stayConnected h1{
+        font-size: 15px;
+        font-weight: 350;
+        
+    }
+    .social a{
+        font-size: 18px;
+        padding: 5px;
+        
+    }
+
+    }
+    @media(max-width:340px) {
+        .navbarList {
+            /* padding: 12px; */
+            display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+        }
+        .navbarList a{
+            padding: 2px;
+            text-align: center;
+        }
+        
+    
+        }
+  
+  

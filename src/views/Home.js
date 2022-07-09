@@ -16,7 +16,7 @@ const Home = () => {
                         muted
                         autoPlay
                         loop
-                        style={{ height: "89vh", width: "100%", objectFit: 'cover' }}
+                        style={{ height: "89vh", width: "100%", objectFit: 'cover',backgroundPosition:'center center' }}
                     > something</video>
                 </div>
                 <div className='intro'>

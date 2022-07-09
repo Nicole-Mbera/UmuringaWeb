@@ -37,7 +37,7 @@ const Shop = (data) => {
                                             setShowVisible(ketch);
                                             setSpVisible(true)
                                            
-                                        }}> add to cart</a>
+                                        }}> Order</a>
                                         {/* <span className='dot'><a><HeartOutlined /></a></span>
                                         <span className='dot'><a><ExpandOutlined /></a></span> */}
 
@@ -49,6 +49,7 @@ const Shop = (data) => {
                             <p>{ketch.price}</p>
                         </div>
                     ))}
+                    
                     <Modal width="850px" centered visible={spVisible} onOk={()=>setSpVisible(false)} onCancel={()=>setSpVisible(false)}>
                       <Cart  data={showVisible}/>
                     </Modal>

@@ -7,15 +7,18 @@
     background-color: rgba(229, 229, 229, 1);
     /* height: 50vh; */
     margin: 3% 5.5%;
+    height: 53vh;
     display: flex;
+    justify-content:space-between;
 
     
 }
 
 .pic img{
     width: 100%;
-    height: 53vh;
-    margin-left:74%;
+    height: 100%;
+    float: right;
+    /* margin-left:74%; */
 }
 .words {
     width: 50%;
@@ -32,14 +35,17 @@
     margin-top: 10px;
 }
 .lowerSection{
+
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 .firstDiv{
-    margin-left: 150px;
-    width: 30%;
-    padding: 20px;
-    text-align: justify;
+    width: 37%;
+    /* text-align: justify; */
+    
 }
 .firstDiv h1{
     text-align: center;
@@ -48,27 +54,79 @@
 
 .artisan h1{
     text-align: center;
-    font-size: x-larger;
+    font-size: x-large;
     font-weight: 600;
 }
 .pic-region{
     display: flex;
-    flex-direction: wrap;
-    /* background-color: aqua; */
-    padding: 20px;
+    justify-content: space-around;
+    /* gap: 60px ; */
+    
+    
 }
 .pic-region img{
-    width: 23%;
-    height: 50vh;
-    margin-left: 96px;
-    object-fit: cover;
+    width: 25%;
+    /* height: 45vh; */
+    /* margin-left: 96px; */
+    object-fit:cover;
 }
 .description{
     display: flex;
+    
 }
 .description h1{
-    margin-left: 96px;
-    width: 23%;
+    /* margin-left: 96px; */
+    /* width: 23%; */
     font-size: large;
+    color: white;
 }
-
+@media(max-width:1105px){
+    .words {
+        width: 50%;
+        padding: 20px;
+        /* background-color: chartreuse; */
+    }
+    .words h1{
+        font-size: 18px;
+        /* text-align: center; */
+    }
+    .words p{
+        text-align: center;
+        font-size: large;
+        margin-top: 10px;
+    }
+}
+@media(max-width:550px){
+    .lowerSection{
+      
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       text-align: center;
+    }
+    .firstDiv{
+        padding: 8px;
+        width: 100%;
+    }
+    .upperSection{
+        height: 30vh;
+    }
+    .words {
+        width: 50%;
+        padding: 20px;
+        /* background-color: chartreuse; */
+    }
+    .words h1{
+        font-size: small;
+        /* text-align: center; */
+    }
+    .words p{
+        text-align: center;
+        font-size: smaller;
+        margin-top: 10px;
+    }
+    .artisan h1{
+        text-align: center;
+        font-size: larger;
+        font-weight: 600;
+    }
+}

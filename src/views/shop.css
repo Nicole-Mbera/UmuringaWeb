@@ -14,3 +14,11 @@ font-size: large;
 text-decoration:none;
 text-align: center;
 }
+.modal{
+    background-color: rgb(243, 17, 17);
+}
+@media(max-width:850px){
+    .modal{
+        width: 50px;
+    }
+}
