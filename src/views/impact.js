@@ -24,7 +24,7 @@ const Impact = () => {
                 <div className="lowerSection">
                     <div className="firstDiv">
                         <h1>Our story</h1>
-                        <p>Umuringa fashion code started with 3 Ecole d’art de Nyundo AlumniloreLorem ipsum dolor sit amet, consectetur adipiscin bbhbnnCurabitur tempus quis odio vel imperdiet. Cras dui </p>
+                        <p>Umuringa fashion code started with three Ecole d’art de Nyundo AlumniloreLorem ipsum dolor sit amet, consectetur adipiscin bbhbnn Curabitur tempus quis odio vel imperdiet. Cras dui lorem ipsum.</p>
                     </div>
 
                     <div className="firstDiv">
@@ -41,8 +41,8 @@ const Impact = () => {
                     <div className="firstDiv">
                         <h1>Values</h1>
                         <p>Our consumers receive exceptional items from us We
-                            are committed to innovation andcontinual progress;
-                            we strivet o improve every single day. We work
+                            are committed to innovation and continual progress;
+                            we strive to improve every single day. We work
                             together to achieve our mutual aims.</p>
                     </div>
 

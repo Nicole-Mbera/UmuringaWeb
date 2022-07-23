@@ -39,7 +39,7 @@ const Cart = ({ data }) => {
                 <div>
 
 
-                    <Carousel autoplay style={{ width: "500px", height: "20vh", paddingRight: "15%" }} >
+                    <Carousel autoplay className='carousel'>
                         {data.image.map((image) => (
                             <img src={image} />
                         ))}
@@ -47,7 +47,7 @@ const Cart = ({ data }) => {
                     </Carousel>
                 </div>
                 
-                <div style={{ width: "50%" }} >
+                <div className='descrip' >
                     <h3>{data.productName}</h3>
                     <p>{data.description}</p>
                     <p> Price: {data.price}  RWF </p>

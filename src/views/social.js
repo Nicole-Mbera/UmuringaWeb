@@ -22,7 +22,44 @@ const Social = () => {
                 </div>
 
 
+                <div className="rom">
+
+                    <div className="descriptive">
+                        <h1>Umuringa in  Environmental protection</h1>
+                        <p>Every year, almost 1.5 billion tyres are discarded globally.
+                            All those disposied old tires,
+                            according to the environmental group EcoGreen, contain toxins and heavy metals that seep into the environment
+                            as the tires degrade.some of these substances are carcinogenic and mutagenic, i.e. they can cause cancer and gene alterations.
+
+
+                            Umuringa Fashion Code recycles nearly  five thousand tyres every year to make adorable footwear brands for Rwandese,
+                            alongside mitigating Environmental degradation.
+                        </p>
+
+                    </div>
+                    <img src={tyres}></img>
+                </div>
+                <div className="rowl">
+                    <img src={tyres}></img>
+                    <div className="descriptive">
+                        <h1>Umuringa in  Environmental protection</h1>
+                        <p>Every year, almost 1.5 billion tyres are discarded globally.
+                            All those disposied old tires,
+                            according to the environmental group EcoGreen, contain toxins and heavy metals that seep into the environment
+                            as the tires degrade.some of these substances are carcinogenic and mutagenic, i.e. they can cause cancer and gene alterations.
+
+
+                            Umuringa Fashion Code recycles nearly  five thousand tyres every year to make adorable footwear brands for Rwandese,
+                            alongside mitigating Environmental degradation.
+                        </p>
+                    </div>
+
+
+                </div>
+
                 <div className="row">
+
+                    <img src={uzuri}></img>
                     <div className="descriptive">
                         <h1>Youth employment Program</h1>
                         <p>Rwanda is the luckiest country,
@@ -41,31 +78,13 @@ const Social = () => {
                             Now U-brand employs more than thirty young ladies and gents.
 
                         </p>
-                    </div>
-                    <img src={uzuri}></img>
-
-                </div>
-                <div className="row">
-                    <img src={tyres}></img>
-                    <div className="descriptive">
-                        <h1>Umuringa in  Environmental protection</h1>
-                        <p>Every year, almost 1.5 billion tyres are discarded globally.
-                            The most serious issue with disposing of old tires,
-                            according to the environmental group EcoGreen,
-                            is that they contain toxins and heavy metals that seep into the environment
-                            as the tires degrade. As proved by scientific evidence,
-                            some of these substances are carcinogenic and mutagenic,
-                            which means they can cause cancer and gene alterations.
-                        </p>
-                        <p>
-                            Umuringa Fashion Code in its goals for environmental protection,
-                            recycles nearly  five thousand tyres every year.
-                            We use tyres to make adorable footwear brands for Rwandese,
-                            alongside mitigating Environmental degradation.
-                        </p>
 
                     </div>
+
+
+
                 </div>
+
 
             </Homelayout>
         </div>

@@ -50,7 +50,7 @@ const Shop = (data) => {
                         </div>
                     ))}
                     
-                    <Modal width="850px" centered visible={spVisible} onOk={()=>setSpVisible(false)} onCancel={()=>setSpVisible(false)}>
+                    <Modal width="" footer=""  centered visible={spVisible} onOk={()=>setSpVisible(false)} onCancel={()=>setSpVisible(false)}>
                       <Cart  data={showVisible}/>
                     </Modal>
                    

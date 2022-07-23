@@ -1,7 +1,7 @@
 import React from "react";
 import "./dashLayout.css";
 import { MenuOutlined, ShoppingCartOutlined, TeamOutlined, AppstoreOutlined,  FolderOpenOutlined, ImportOutlined } from '@ant-design/icons';
-import photo from "../assets/images/logo.jpg"
+import photo from  "../assets/images/nobag.png"
 
 
 const DashLayout = ({ children }) => {
@@ -12,7 +12,7 @@ const DashLayout = ({ children }) => {
             <div className="header">
                 <div className="logo-division"><img src={photo}></img></div>
                 <div className="logout"><a href="/home">log out</a> </div>
-                <div className="menu"> <MenuOutlined /> </div>
+                {/* <div className="menu"> <MenuOutlined /> </div> */}
             </div>
             <div className="menuSection">
                 <ul className="icons">

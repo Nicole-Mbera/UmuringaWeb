@@ -25,10 +25,8 @@ const Menu = () => {
             <a href="/home"> Home </a>
             <hr></hr> <br></br>
             {/* <a href="/shop">Categories</a> */}
-            <a>foot wear</a>
-                <br></br> <br></br>
-                <a>artistic bags</a>
-                <br></br> <br></br>
+            <a href="/shop">shoes</a>
+            <hr></hr> <br></br> 
             {/* <button type="button" class="collapsible">Categories</button>
             <hr></hr> <br></br>
             <div class="content">

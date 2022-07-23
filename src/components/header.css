@@ -59,6 +59,7 @@
 }
 .button-container{
     display: none;
+    cursor: pointer;
 }
 
 @media(max-width:912px) {
