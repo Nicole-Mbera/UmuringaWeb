@@ -104,7 +104,24 @@
   width: "100%";
   object-fit: cover;
 }
+@media(max-width:912px){
+  .intro {
+    padding: 25px;
+  }
+  .best-sellers {
+    gap: 20px;
 
+  }
+
+  .container {
+    width: 30%;
+  }
+  .image {
+  
+    height: 35vh;
+    
+  }
+}
 @media(max-width:550px) {
   .intro {
     padding: 25px;
