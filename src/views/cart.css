@@ -13,6 +13,14 @@
     padding:50px;
     display: flex;
 }
+.carousel{
+    width:500px;
+    padding-right: 15%;
+}
+.descrip{
+    width: 60%;
+    /* background-color: white; */
+}
 .button{
     color: black;
     background-color:  grey ;
@@ -25,4 +33,25 @@
 }
 .button a{
     color: black;
+}
+@media(max-width:600px){
+.carousel{
+    width: 295px;
+    padding-right: 0px;
+}
+.Cart-container{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: (1,1fr);
+}
+.descrip{
+    width: 90%;
+    /* background-color: white; */
+}
+}
+@media(max-width:280px){
+    .carousel{
+        width: 200px;
+        padding-right: 0px;
+    }
 }

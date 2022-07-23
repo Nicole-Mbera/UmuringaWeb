@@ -59,7 +59,7 @@ const RegisterProduct = () => {
             </Form.Item>
             
             
- <Upload><Button icon={<UploadOutlined />} style={{ width:160, height: "4.5vh", marginLeft:"157px", marginTop:"30px"}}>Upload Image</Button></Upload>
+ <Upload><Button icon={<UploadOutlined />} style={{ width:160, marginTop:"30px"}}>Upload Image</Button></Upload>
  <Button  type="primary" htmlType="submit">Submit</Button>
  </Form>
  </div>

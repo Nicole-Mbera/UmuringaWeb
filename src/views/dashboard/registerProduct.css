@@ -1,36 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.registering{
+
+.registering {
     margin-left: 18%;
-    height: 80vh;
+    /* height: 80vh; */
     width: 84%;
     color: black;
     position: fixed;
     /* background-color: aqua; */
 }
-    .registering h1{
-        font-size: large;
-        margin-top: 3.7%;
-        text-align: center;
-        font-weight: 400;
-       
-    }
-   .registering form{
-       /* background-color: blue; */
-       /* padding: 20px; */
-       margin-left: 150px;
-   }
 
-    .registering button{
-        float: right;
-        color: black;
-        background-color: grey ;
-        height: 5.5vh;
-        border:none;
-        width: 130px;
-        border-radius: 10px;
-        margin-right: 300px;
+.registering h1 {
+    font-size: large;
+    margin-top: 3.7%;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.registering form {
+    /* background-color: blue; */
+    /* padding: 20px; */
+    margin-left: 150px;
+}
+
+.registering button {
+    float: right;
+    color: black;
+    background-color: grey;
+    /* height: 5.5vh; */
+    border: none;
+    width: 130px;
+    border-radius: 10px;
+    margin-right: 300px;
+
+}
+@media(max-width:1024px){
+    .registering button {
+        margin-right: 220px;
         
     }
+}
+
+@media (max-width:912px) {
+    .registering button {
+        margin-right: 190px;
+        
+    }
+}
+@media (max-width:820px) {
+    .registering button {
+        margin-right: 150px;
+        
+    }
+}
+@media(max-width:700px){
+    .menuSection{
+        display: none;
+    }
+    
+.registering {
+    margin-left: 0px;
+    height: 80vh;
+    width: 100%;
+    /* color: black; */
+    /* position:absolute; */
+    /* background-color: aqua; */
+}
+}

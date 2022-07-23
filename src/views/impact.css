@@ -44,7 +44,7 @@
 }
 .firstDiv{
     width: 37%;
-    /* text-align: justify; */
+    text-align: justify;
     
 }
 .firstDiv h1{
@@ -81,6 +81,14 @@
     color: white;
 }
 @media(max-width:1105px){
+    .firstDiv p{
+        text-align: justify;
+    }
+    .firstDiv{
+        padding: 0px;
+        width: 41%;
+        
+    }
     .words {
         width: 50%;
         padding: 20px;
@@ -96,6 +104,11 @@
         margin-top: 10px;
     }
 }
+@media(max-width:912px){
+    .upperSection{
+        height: 23vh;
+    }
+}
 @media(max-width:550px){
     .lowerSection{
       
@@ -106,9 +119,13 @@
     .firstDiv{
         padding: 8px;
         width: 100%;
+        
+    }  
+    .firstDiv p{
+        text-align: justify;
     }
     .upperSection{
-        height: 30vh;
+        height: 25vh;
     }
     .words {
         width: 50%;
