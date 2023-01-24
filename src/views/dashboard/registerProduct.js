@@ -1,19 +1,44 @@
-import React from "react";
-import DashLayout from "../../components/dashLayout"
-import "./registerProduct.css"
-import {Button, Upload,Input,Form} from "antd"
-import {UploadOutlined} from "@ant-design/icons"
+import React, { useState } from "react";
+import axios from "axios";
+import DashLayout from "../../components/dashLayout";
+import "./registerProduct.css";
+import { Button, Upload, Input, Form } from "antd";
+import { UploadOutlined } from "@ant-design/icons";
 
 const RegisterProduct = () => {
-  return(
+  const [name, setName] = useState("");
+  const [discription, setDiscription] = useState("");
+  const [price, setPrice] = useState("");
+  const [productPicture, setProductPicture] = useState("");
 
+  const handleProduct = (e) => {
+    e.preventDefault();
+    console.log(name, discription, price, productPicture);
+
+    axios
+      .post("http://localhost:7000/product/registerProduct", {
+        name,
+        discription,
+        price,
+        productPicture,
+      })
+      .then((e) => {
+        setName("");
+        setDiscription("");
+        setPrice("");
+        setProductPicture("");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  return (
     <div className="register-container">
-<DashLayout>
-
- <div className="registering">
- <h1>Register product</h1>
- <Form>
- <Form.Item
+      <DashLayout>
+        <div className="registering">
+          <h1>Register product</h1>
+          <Form>
+            <Form.Item
               name="ProductName"
               rules={[
                 {
@@ -22,7 +47,12 @@ const RegisterProduct = () => {
                 },
               ]}
             >
-              <Input placeholder="Product name" style={{padding:"10px", marginTop:"20px", width:"70%"}} />
+              <Input
+                placeholder="Product name"
+                style={{ padding: "10px", marginTop: "20px", width: "70%" }}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </Form.Item>
             {/* <Form.Item
               name="product picture"
@@ -44,7 +74,12 @@ const RegisterProduct = () => {
                 },
               ]}
             >
-              <Input placeholder="Description" style={{padding:"10px", width:"70%"}} />
+              <Input
+                placeholder="Description"
+                style={{ padding: "10px", width: "70%" }}
+                value={discription}
+                onChange={(e) => setDiscription(e.target.value)}
+              />
             </Form.Item>
             <Form.Item
               name="price"
@@ -55,18 +90,31 @@ const RegisterProduct = () => {
                 },
               ]}
             >
-              <Input placeholder="price"  style={{padding:"10px", width:"70%"}}/>
+              <Input
+                placeholder="price"
+                style={{ padding: "10px", width: "70%" }}
+                value={price}
+                onChange={(e) => setPrice(e.target.value)}
+              />
             </Form.Item>
-            
-            
- <Upload><Button icon={<UploadOutlined />} style={{ width:160, marginTop:"30px"}}>Upload Image</Button></Upload>
- <Button  type="primary" htmlType="submit">Submit</Button>
- </Form>
- </div>
+            <Form.Item name="productPicture">
+              <Input
+                placeholder="product image"
+                type="link"
+                style={{ padding: "10px", width: "70%" }}
+                value={productPicture}
+                onChange={(e) => setProductPicture(e.target.value)}
+              />
+            </Form.Item>
 
-</DashLayout>
-    </div>  
-    
- );
+            {/* <Upload><Button icon={<UploadOutlined />} style={{ width:160, marginTop:"30px"}}>Upload Image</Button></Upload> */}
+            <Button type="primary" htmlType="submit" onClick={handleProduct}>
+              Submit
+            </Button>
+          </Form>
+        </div>
+      </DashLayout>
+    </div>
+  );
 };
 export default RegisterProduct;
