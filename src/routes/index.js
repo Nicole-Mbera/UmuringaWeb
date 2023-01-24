@@ -22,7 +22,7 @@ const Index=()=>{
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/Cart' element={<Cart/>}/>
         <Route path='/order' element={<Order/>}/>
-        <Route exact path="/dashLayout" element={<DashLayout/>}/>
+        <Route exact path="/dashLayout" element={<Products/>}/>
         <Route exact path="/registerProducts" element={<RegisterProduct/>}/>
         <Route exact path="/manageProducts" element={<Products/>}/>
         

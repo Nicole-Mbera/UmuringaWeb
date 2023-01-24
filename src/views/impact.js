@@ -56,25 +56,18 @@ const Impact = () => {
 
 
                 </div>
-
                 <div className="artisan">
-                    <h1>Meet the artisan</h1>
-                    <div className="pic-region" >
-                        <img src={boss}></img>
-                        <img src={manager}></img>
-                        <img src={boss}></img>
-                    </div>
-<div className="description">
-    <h1> Anaclet Tuyishimire</h1>
-    <h1>Grace Uwase</h1>
-    <h1> Anaclet Tuyishimire</h1>
-</div>
-{/* <div className="description">
-    <h1> Chief Executive Officer</h1>
-    <h1>Management Director</h1>
-    <h1> Marketing department manager</h1>
-</div> */}
+
+
+
+
                 </div>
+
+
+                {/* <img src={boss}></img>
+                <img src={manager}></img>
+                <img src={boss}></img> */}
+
             </Homelayout>
         </div>
     )

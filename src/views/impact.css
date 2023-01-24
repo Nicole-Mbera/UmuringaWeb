@@ -43,8 +43,10 @@
 
 }
 .firstDiv{
-    width: 37%;
-    text-align: justify;
+    width: 43%;
+    text-align:left;
+    padding: 20px;
+     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.589);
     
 }
 .firstDiv h1{
@@ -52,34 +54,7 @@
     font-size: large;
 }
 
-.artisan h1{
-    text-align: center;
-    font-size: x-large;
-    font-weight: 600;
-}
-.pic-region{
-    display: flex;
-    justify-content: space-around;
-    /* gap: 60px ; */
-    
-    
-}
-.pic-region img{
-    width: 25%;
-    /* height: 45vh; */
-    /* margin-left: 96px; */
-    object-fit:cover;
-}
-.description{
-    display: flex;
-    
-}
-.description h1{
-    /* margin-left: 96px; */
-    /* width: 23%; */
-    font-size: large;
-    color: white;
-}
+
 @media(max-width:1105px){
     .firstDiv p{
         text-align: justify;
