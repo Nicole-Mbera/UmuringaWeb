@@ -6,103 +6,84 @@
 
 .intro {
   padding: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .intro p {
   text-align: justify;
   margin-top: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .title {
   text-align: center;
-  font-size: large;
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.best-sellers {
+.best-sellers{
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* height: 70vh; */
+}
+.carousel{ 
+  /* position: relative; */
+  display: flex;
+  justify-content: "center";
+  align-items: "center";
+  /* gap: 85px; */
+  /* background-color: red; */
+  /* height: 40vh; */
+}
+.slide{
   width: 100%;
-  gap: 85px;
-  justify-content: center;
-  /* background-color: aqua; */
-  /* padding: 70px; */
-  /* margin-top: 43px; */
-
-  /* background-color: brown; */
 }
 
 .container {
-  width: 23%;
+
+  /* padding: 30px; */
+  width: 25%;
   /* background-color: rgb(177, 17, 115); */
-  color: white;
-  /* margin-left: 110px; */
+  /* color: red; */
+  margin-left: 90px;
+  margin-top: 10px;
 
 }
-
-.overlay {
-  position: relative;
-  width: 50%;
-  width: 100%;
+.description{
+  /* margin-top: 110px; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.image {
-  opacity: 1;
-  background-size: 100%;
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: fill;
-  height: 45vh;
-  backface-visibility: hidden;
-  transition: 1s;
-}
 
-.image:hover {
-  background-size: 150%;
-  background-position: center;
-}
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-.overlay:hover .image {
-  opacity: 0.9;
-}
 
-.overlay:hover .middle {
-  opacity: 1;
-}
 
-.text {
-  cursor: pointer;
-  background-color: white;
-  box-shadow: 1px 1px 3.5px rgba(128, 128, 128, 0.438);
-  color: black;
-  font-size: 16px;
-  padding: 5px 15px;
 
-}
 
-.text a {
-  text-decoration: none;
-  color: black;
-  font-size: 19px;
-}
+
+
+
 
 .anime {
   height: "89vh";
   width: "100%";
   object-fit: cover;
+}
+
+@media(max-width:1256px){
+  .container {
+    margin-left: 65px;
+  
+  }
+}
+@media (max-width:1024px) {
+  .container {
+    width: 45%;
+    margin-left: 20px;
+  
+  }
 }
 @media(max-width:912px){
   .intro {
@@ -114,7 +95,8 @@
   }
 
   .container {
-    width: 30%;
+    width: 45%;
+    margin-left: 20px;
   }
   .image {
   
@@ -122,7 +104,7 @@
     
   }
 }
-@media(max-width:550px) {
+@media(max-width:670px) {
   .intro {
     padding: 25px;
   }
@@ -133,7 +115,8 @@
   }
 
   .container {
-    width: 70%;
+    width: 100%;
+    margin-left: 10px;
   }
   .image {
   
@@ -142,3 +125,13 @@
   }
 
 }
+@media (max-width:280px){
+  .carousel-container {
+    width: 230px;
+  }
+  .container {
+    width: 60%;
+    margin-left: 0px;
+  }
+}
+  

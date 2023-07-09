@@ -16,7 +16,6 @@ const DashLayout = ({ children }) => {
             </div>
             <div className="menuSection">
                 <ul className="icons">
-                    <li><AppstoreOutlined /> </li>
                     <li><FolderOpenOutlined /> </li>
                     <li><ImportOutlined /></li>
                     {/* <li><ShoppingCartOutlined /></li> */}
@@ -25,7 +24,7 @@ const DashLayout = ({ children }) => {
                 </ul>
 
                 <ul className="list">
-                    <li> <a>Dashboard</a></li>
+        
                     <li> <a href="/manageProducts"> Manage product </a></li>
                     <li> <a href="/registerProducts">Register product </a></li>
                     {/* <li><a href="/dashOrders">Orders</a></li> */}

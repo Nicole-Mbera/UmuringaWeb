@@ -2,10 +2,9 @@
     /* margin-top: 40px; */
     /* height: 30vh; */
     width: 100%;
-}
-.stayConnected{
     background-color: grey;
 }
+
 .social{
     /* margin-left: 562px; */
     padding-bottom: 3px;
@@ -14,22 +13,22 @@
     gap:13px;
     justify-content: center;
 }
-.circle{
-    /* margin-top: 8px; */
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0.5px;
-    }
+
 .social a{
+color: black;
+    margin-top: 14px;
     font-size: 23.5px;
     text-align: center;
     padding: 8px;
-    cursor: pointer;
+    border: 1.1px solid black;
+    padding: 2px;
+    border-radius: 50%;
+    width: 45px;
+    
 }
 
 .stayConnected h1{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 350;
     color: black;
     text-align: center;
@@ -38,9 +37,8 @@
     color: black;   
 }
 .navbarList{
-    margin-top: 1.35px;
-    background-color: gray ;
-    padding: 35px;
+    /* background-color: rgb(230, 17, 17) ; */
+    padding: 30px;
     display: flex;
     justify-content: center;
 
@@ -49,7 +47,13 @@
     float:inline-start;
     padding: 27px;
     color: black;
+    border: 1.3px solid black;
+    padding: 6px 15px;
+    border-radius: 50px;
     text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    margin-left: 5px;
     /* font-size: 15px; */
 }
 

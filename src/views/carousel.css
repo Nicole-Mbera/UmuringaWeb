@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .carousel {
+    padding: 5px 5px 0;
+    border-radius: 4px;
+    margin: auto;
+  }
+  .carousel__main {
+    border-radius: 4px;
+    height: 110px;
+  }
+  
+  .demo-item {
+    height: 110px;
+  }
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .carousel-container {
+    max-width: 750px;
+  }
+  

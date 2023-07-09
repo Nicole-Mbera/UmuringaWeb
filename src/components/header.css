@@ -33,8 +33,9 @@
     padding: 25px;
     color: black;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
@@ -42,7 +43,7 @@
     background-color: black;
     content: "";
     height: 2px;
-    left: 0;
+    left: 12%;
     bottom: 27px;
     position: absolute;
     transition: 0.3s;
@@ -55,7 +56,7 @@
 }
 
 .Navbar a:hover:after {
-    width: 100%;
+    width: 75%;
 }
 .button-container{
     display: none;

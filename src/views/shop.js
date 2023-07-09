@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Homelayout from "../components/homeLayout";
 import "./shop.css";
+import Shoes from "../assets/constants/shop.json"
 import Cart from "./cart";
-import { Carousel, Modal } from "antd";
-import {
-  HeartOutlined,
-  ShoppingCartOutlined,
-  ExpandOutlined,
-} from "@ant-design/icons";
+import { Modal } from "antd";
+import { Carousel } from 'react-responsive-carousel'
+
 import { CircularProgress } from "@mui/material";
-import Shoes from "../assets/constants/shop.json";
+
 import axios from "axios";
 
 const Shop = (data) => {
@@ -39,46 +37,53 @@ const Shop = (data) => {
   return (
     <div className="shop-container">
       <Homelayout>
-        <h1>Shop with Umuringa</h1>
+        <h1 className="title">SHOP WITH UMURINGA</h1>
 
-        <div className="best-sellers">
+        <div className="best-shop">
           {isFetching ? (
             <center style={{ paddingTop: "100px", paddingLeft: "250px" }}>
               <CircularProgress />
             </center>
           ) : (
             <>
-              {products.map((ketch, Index) => (
+              {products.map((product, Index) => (
                 <div className="container">
-                  <div className="overlay">
-                    <Carousel autoplay>
-                      {ketch.productPicture.map((images) => (
-                        <div>
-                          {" "}
-                          <img className="image" src={images} />
-                        </div>
+                  
+                  <div className="carousel">
+                  <Carousel>
+                      {product.productPicture.map((images) => (
+                        
+                          
+                          
+                          
+                          <img src={images} />
+                          
                       ))}
-                    </Carousel>
+                      </Carousel>
+                        
+                     </div>
+                  
                     {/* <img className="image" src={ketch.productPicture} /> */}
-                    <div className="middle">
+                   
                       <div className="text">
                         <a
                           href="#"
                           onClick={() => {
-                            setShowVisible(ketch);
+                            setShowVisible(product);
                             setSpVisible(true);
                           }}
                         >
                           {" "}
-                          Order
+                          
                         </a>
                         {/* <span className='dot'><a><HeartOutlined /></a></span>
                                         <span className='dot'><a><ExpandOutlined /></a></span> */}
                       </div>
-                    </div>
+                   
+                  <div className="description">
+                  <p>{product.name}</p>
+                  <p>{product.price}</p>
                   </div>
-                  <p>{ketch.name}</p>
-                  <p>{ketch.price}</p>
                 </div>
               ))}
             </>

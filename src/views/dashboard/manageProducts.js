@@ -1,13 +1,13 @@
 import { React, useState, useEffect } from "react";
 import DashLayout from "../../components/dashLayout";
 import "./manageProduct.css";
-import ProductContent from "../../assets/constants/product.json";
 import axios from "axios";
 import { Space, Table, Modal, Button, Input } from "antd";
 import { EyeOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import "antd/dist/antd.css";
-import EditProduct from "../../components/EditProduct";
-import confirm from "antd/lib/modal/confirm";
+
+import EditProduct from "../../components/EditProduct.js"
+
 
 const Products = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,21 +28,6 @@ const Products = () => {
       dataIndex: "price",
       key: "price",
     },
-
-    //     {
-    //     title:"Product Number",
-    //     dataIndex:"Product Number",
-    //     key:"Product Number"
-    // },
-
-    // {
-    //     title:"Status",
-    //     dataIndex:"status",
-    //    key:"status"
-    // },
-    { title: "description", dataIndex: "description", key: "description" },
-
-    { title: "picture", dataIndex: "productPicture", key: "picture" },
 
     {
       title: "action",
@@ -106,12 +91,15 @@ const Products = () => {
   return (
     <>
       <DashLayout>
-        <h2 style={{ textAlign: "center", fontSize: "40px" }}>Products</h2>
+        <h2 style={{ textAlign: "center", fontSize: "40px"}}>Products</h2>
+        
         <Table
-          style={{ width: "80%", marginLeft: "250px", height: "90vh" }}
+          style={{ width: "80%", marginLeft: "250px", position:"relative"}}
           columns={columnOne}
           dataSource={product}
         />
+        
+
       </DashLayout>
       <EditProduct
         isModalOpen={isModalOpen}
@@ -119,6 +107,7 @@ const Products = () => {
         currentProduct={currentProduct}
         fetchedProducts={fetchProducts}
       />
+
     </>
   );
 };

@@ -2,8 +2,9 @@ import React from "react";
 import Homelayout from "../components/homeLayout";
 import "./impact.css"
 import background from "../assets/images/pure.jpg"
-import boss from "../assets/images/boss.png"
+import goals from "../assets/images/book.jpg"
 import manager from "../assets/images/manager.png"
+
 
 const Impact = () => {
     return (
@@ -20,7 +21,18 @@ const Impact = () => {
                     <div className="pic"><img src={background}></img></div>
 
                 </div>
+<div className="puzzled">
+<h1>Our Story</h1>
+<div className="draw">
+<img src={goals} className="profilePicture"/>
+</div>
 
+                        
+                        <p>To make people confident through fashion by promoting hand
+                            made and artisticf ashion products and leading manufacturers of corporate give away fashion in Rwanda.
+                        </p>
+                        
+                    </div>
                 <div className="lowerSection">
                     <div className="firstDiv">
                         <h1>Our story</h1>
@@ -28,16 +40,13 @@ const Impact = () => {
                     </div>
 
                     <div className="firstDiv">
-                        <h1>Vision</h1>
+                        <h1>Our Vision</h1>
                         <p>To make people confident through fashion by promoting hand
-                            made and artisticf ashion products and leading manufacturers of corporate give away fashion in Rwanda.
-                        </p>
+                            made and artisticf ashion products and leading manufacturers of corporate give away fashion in Rwanda.</p>
                     </div>
 
 
-                </div>
-
-                <div className="lowerSection">
+                
                     <div className="firstDiv">
                         <h1>Values</h1>
                         <p>Our consumers receive exceptional items from us We
@@ -56,25 +65,18 @@ const Impact = () => {
 
 
                 </div>
-
                 <div className="artisan">
-                    <h1>Meet the artisan</h1>
-                    <div className="pic-region" >
-                        <img src={boss}></img>
-                        <img src={manager}></img>
-                        <img src={boss}></img>
-                    </div>
-<div className="description">
-    <h1> Anaclet Tuyishimire</h1>
-    <h1>Grace Uwase</h1>
-    <h1> Anaclet Tuyishimire</h1>
-</div>
-{/* <div className="description">
-    <h1> Chief Executive Officer</h1>
-    <h1>Management Director</h1>
-    <h1> Marketing department manager</h1>
-</div> */}
+
+
+
+
                 </div>
+
+
+                {/* <img src={boss}></img>
+                <img src={manager}></img>
+                <img src={boss}></img> */}
+
             </Homelayout>
         </div>
     )
