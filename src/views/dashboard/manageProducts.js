@@ -5,6 +5,7 @@ import axios from "axios";
 import { Space, Table, Modal, Button, Input } from "antd";
 import { EyeOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import "antd/dist/antd.css";
+
 import EditProduct from "../../components/EditProduct.js"
 
 
@@ -27,10 +28,6 @@ const Products = () => {
       dataIndex: "price",
       key: "price",
     },
-
-    
-
-  
 
     {
       title: "action",
@@ -102,6 +99,7 @@ const Products = () => {
           dataSource={product}
         />
         
+
       </DashLayout>
       <EditProduct
         isModalOpen={isModalOpen}
@@ -109,7 +107,7 @@ const Products = () => {
         currentProduct={currentProduct}
         fetchedProducts={fetchProducts}
       />
-      
+
     </>
   );
 };
