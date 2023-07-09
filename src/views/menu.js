@@ -38,9 +38,7 @@ const Menu = () => {
 
             </div> */}
 
-            <a href="/impact">Social impact</a>
-            <hr></hr> <br></br>
-            <a href="/about">About us</a>
+            <a href="/impact">About us</a>
             <hr></hr> <br></br>
             <a href="/contact">Contact us</a>
             <hr></hr> <br></br>

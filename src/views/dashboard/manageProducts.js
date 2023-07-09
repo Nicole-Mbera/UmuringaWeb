@@ -1,80 +1,117 @@
-import React, { useEffect } from "react";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import { styled } from "@mui/material/styles";
-import TableCell, { tableCellClasses } from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
-import DashLayout from "../../components/dashLayout"
-import { useDispatch,useSelector } from "react-redux";
-import {getAllProductActions} from '../../redux/product/actions';
+import { React, useState, useEffect } from "react";
+import DashLayout from "../../components/dashLayout";
+import "./manageProduct.css";
+import axios from "axios";
+import { Space, Table, Modal, Button, Input } from "antd";
+import { EyeOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons";
+import "antd/dist/antd.css";
+import EditProduct from "../../components/EditProduct.js"
 
 
-const StyledTableCell = styled(TableCell)(({ theme }) => ({
-    [`&.${tableCellClasses.head}`]: {
-      backgroundColor: theme.palette.common.black,
-      color: theme.palette.common.white,
+const Products = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentProduct, setCurrentProduct] = useState([]);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const columnOne = [
+    {
+      title: "Product Name",
+      dataIndex: "name",
+      key: "name",
     },
-    [`&.${tableCellClasses.body}`]: {
-      fontSize: 14,
+
+    {
+      title: "price",
+      dataIndex: "price",
+      key: "price",
     },
-  }));
+
+    
+
   
-  const StyledTableRow = styled(TableRow)(({ theme }) => ({
-    "&:nth-of-type(odd)": {
-      backgroundColor: theme.palette.action.hover,
-    },
-    // hide last border
-    "&:last-child td, &:last-child th": {
-      border: 0,
-    },
-  }));
 
-const Products=()=>{
-    const dispatch=useDispatch();
-    const {products,isFetching}=useSelector((state)=>state?.product);
-    useEffect(()=>{
-        getAllProductActions()(dispatch)
-    },[])
-    console.log(products)
-    return (
-        <DashLayout>
-      <h1> Product Management</h1>
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 700 }} aria-label="customized table">
-          <TableHead>
-            <TableRow>
-              <StyledTableCell>N0</StyledTableCell>
-              <StyledTableCell align="right">Product-Name</StyledTableCell>
-              <StyledTableCell align="right">Description</StyledTableCell>
-              <StyledTableCell align="right">price</StyledTableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {products.map((row, index) => (
-              <StyledTableRow key={row.name}>
-                <StyledTableCell component="th" scope="row">
-                  {index + 1}
-                </StyledTableCell>
-                <StyledTableCell align="right">
-                  {row. name}
-                </StyledTableCell>
-                <StyledTableCell align="right">{row.description}</StyledTableCell>
-                <StyledTableCell align="right">{row.price}</StyledTableCell>
-                {/* <StyledTableCell align="right">{row.productPicture[0]}</StyledTableCell> */}
-                {/* <StyledTableCell align="right">{row.email}</StyledTableCell> */}
-                {/* <StyledTableCell align="right">
-                  {row.isActive ? "available" : "not available"}
-                </StyledTableCell> */}
-              </StyledTableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </DashLayout>
+    {
+      title: "action",
+      dataIndex: "action",
+      render: (text, record) => (
+        <Space size="middle">
+          <a>
+            <EyeOutlined />
+          </a>
+          <a>
+            <EditOutlined
+              onClick={() => {
+                showModal();
+                setCurrentProduct(record);
+              }}
+            />
+          </a>
+          <a>
+            <DeleteOutlined
+              onClick={() =>
+                // confirm(`Are you sure you want to delete ${record.name} ?`) &&
+                handleDelete(record._id)
+              }
+            />
+          </a>
+        </Space>
+      ),
+    },
+  ];
+
+  const [product, setProduct] = useState([]);
+  const [isFetching, setIsFetching] = useState(false);
+  const handleDelete = (id) => {
+    console.log("id to delete", id);
+    axios
+      .delete("http://localhost:7000/product/shoe/" + id)
+      .then((resp) => {
+        setProduct(product.filter((item) => item._id != id));
+        console.log(`Item with Id ${id} has been deleted!!`);
+      })
+      .catch((error) => console.log(error));
+  };
+  const fetchProducts = () => {
+    setIsFetching(true);
+    axios
+      .get("http://localhost:7000/product/allproducts")
+      .then((res) => {
+        setProduct(res.data.data);
+        setIsFetching(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        setIsFetching(false);
+      });
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  return (
+    <>
+      <DashLayout>
+        <h2 style={{ textAlign: "center", fontSize: "40px"}}>Products</h2>
+        
+        <Table
+          style={{ width: "80%", marginLeft: "250px", position:"relative"}}
+          columns={columnOne}
+          dataSource={product}
+        />
+        
+      </DashLayout>
+      <EditProduct
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        currentProduct={currentProduct}
+        fetchedProducts={fetchProducts}
+      />
+      
+    </>
   );
 };
 
-  export default Products;
+export default Products;

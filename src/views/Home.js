@@ -2,9 +2,9 @@ import React from 'react'
 import Homelayout from '../components/homeLayout'
 import "./home.css"
 import slay from "../assets/images/far.mp4"
-import { HeartOutlined, ShoppingCartOutlined, ExpandOutlined } from '@ant-design/icons';
-import { Carousel } from "antd";
+import { Carousel } from 'react-responsive-carousel'
 import Shoes from "../assets/constants/sellers.json";
+
 const Home = () => {
     return (
         <Homelayout>
@@ -28,34 +28,40 @@ const Home = () => {
                 </div>
                 <h1 className='title'>BEST SELLERS</h1>
 
-                <div className='best-sellers'>
-                    {Shoes.map((ketch) => (
+            
 
+                <div className='best-sellers'>
+
+                    
+                    {Shoes.map((ketch) => (
+                        
 
                         <div className="container">
 
-                            <div className="overlay">
-                                <Carousel autoplay>
-
-                                    {ketch.image.map((images) => (
-                                        <div> <img className="image" src={images} /></div>
+                            
+                                   <div className='carousel'>
+                                   
+                                    <Carousel>
+                                    {ketch.image.map((images, Index=0) => (
+                                     
+                                     
+                                      <img src={images}/>
+                                     
+                                     
                                     ))}
-                                </Carousel>
+                                    </Carousel>
+                                
+                                </div>  
+                              
 
-                                <div className="middle">
-                                    <div className="text-omitted">
-
-                                        {/* <a>add cart</a> */}
-                                        {/* <span className='dot'><a><ShoppingCartOutlined /></a></span>
-                                        <span className='dot'><a><HeartOutlined /></a></span>
-                                        <span className='dot'><a><ExpandOutlined /></a></span> */}
-
-                                    </div>
-                                </div>
-                            </div>
+                    
+                            <div className='description'>
                             <p>{ketch.productName}</p>
                             <p>{ketch.price}</p>
+                            </div>
+                            
                         </div>
+                      
                     ))}
                 </div>
 

@@ -18,3 +18,9 @@ text-align: center;
     width: 850px;
     background-color: aqua;
 }
+.best-shop{
+display: flex;
+flex-wrap: wrap;
+/* height: 300vh; */
+/* margin: bottom 20px; */
+}

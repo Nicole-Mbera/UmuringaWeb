@@ -13,6 +13,8 @@
 .containerContactus h2 {
     text-align: center;
     padding-top: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
 }
 
 .contactus {
@@ -41,7 +43,7 @@
 }
 
 .social-media {
-    
+    padding: 15px;
     box-shadow: 0px 0px 0px 1.7px rgba(0, 0, 0, 0.253);
 }
 
@@ -50,20 +52,12 @@
     font-size: 15px;
     padding-top: 1px;
     font-weight: 100;
-    color: gray;
-
-}
-
-.circum {
-
-    background-color: grey;
-    border-radius: 50%;
-    display: inline-block;
-    padding-top: 2px;
-}
-.circum a{
     color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
+
+
 .contact p {
     padding-top: 30px;
     margin-left: 50px;

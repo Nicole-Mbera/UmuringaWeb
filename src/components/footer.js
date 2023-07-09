@@ -13,9 +13,9 @@ const Footer = () => {
                 <div className="social">
                 {/* <h1>stay connected</h1> */}
                 <a href="https://www.facebook.com/anaclet.art/"><FacebookOutlined /></a>
-                    <a href="https://www.linkedin.com/in/tuyishime-anaclet-04421a230/?originalSubdomain=rw"><LinkedinOutlined /></a>
-                    <a href="https://www.instagram.com/umuringa_fashion_code/"><InstagramOutlined /></a>
-                    <a href="https://web.whatsapp.com/"><WhatsAppOutlined /></a>
+                <a href="https://www.linkedin.com/in/tuyishime-anaclet-04421a230/?originalSubdomain=rw"><LinkedinOutlined /></a>
+                <a href="https://www.instagram.com/umuringa_fashion_code/"><InstagramOutlined /></a>
+                <a href="https://web.whatsapp.com/"><WhatsAppOutlined /></a>
                 </div>
             </div>
             {/* <hr className="line"></hr> */}
