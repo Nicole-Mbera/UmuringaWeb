@@ -21,10 +21,10 @@ const Contact = () => {
                             </div>
                             <div className="social-media">
                                 <h2><LocationOnSharpIcon></LocationOnSharpIcon> Umuringa Fashion, Kigali Gikondo, Rwanda</h2>
-                                <h2><EmailSharpIcon></EmailSharpIcon> umuringabrand@fashion.com</h2>
+                                <h2><EmailSharpIcon></EmailSharpIcon> umuringafashion@gmail.com</h2>
                                 <h2> <LocalPhoneRoundedIcon></LocalPhoneRoundedIcon> +250787735301</h2>
                                 
-                                <div className="social">
+                                <div className="sociale">
                 {/* <h1>stay connected</h1> */}
                 <a href="https://www.facebook.com/anaclet.art/"><FacebookOutlined /></a>
                 <a href="https://www.linkedin.com/in/tuyishime-anaclet-04421a230/?originalSubdomain=rw"><LinkedinOutlined /></a>

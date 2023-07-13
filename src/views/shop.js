@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Homelayout from "../components/homeLayout";
 import "./shop.css";
-import Shoes from "../assets/constants/shop.json"
 import Cart from "./cart";
 import { Modal } from "antd";
 import { Carousel } from 'react-responsive-carousel'
@@ -14,44 +13,45 @@ const Shop = (data) => {
   const [showVisible, setShowVisible] = useState({});
   const [spVisible, setSpVisible] = useState(false);
 
-  const [products, setProducts] = useState([]);
+  const [Shoes, setShoes] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
 
-  const fetchProducts = () => {
+  const fetchShoes = () => {
     setIsFetching(true);
     axios
       .get("http://localhost:7000/product/allproducts")
       .then((res) => {
-        setProducts(res.data.data);
+        setShoes(res.data.data);
         setIsFetching(false);
       })
       .catch((error) => {
         console.log(error);
         setIsFetching(false);
+        // You can display an error message to the user here if needed
       });
   };
 
   useEffect(() => {
-    fetchProducts();
+    fetchShoes();
   }, []);
   return (
     <div className="shop-container">
       <Homelayout>
         <h1 className="title">SHOP WITH UMURINGA</h1>
 
-        <div className="best-shop">
+        <div className="best-sellers">
           {isFetching ? (
             <center style={{ paddingTop: "100px", paddingLeft: "250px" }}>
               <CircularProgress />
             </center>
           ) : (
             <>
-              {products.map((product, Index) => (
-                <div className="container">
+              {Shoes.map((shoe, Index) => (
+                <div key={shoe.id} className="container">
                   
                   <div className="carousel">
                   <Carousel>
-                      {product.productPicture.map((images) => (
+                      {shoe.productPicture.map((images) => (
                         
                           
                           
@@ -69,7 +69,7 @@ const Shop = (data) => {
                         <a
                           href="#"
                           onClick={() => {
-                            setShowVisible(product);
+                            setShowVisible(shoe);
                             setSpVisible(true);
                           }}
                         >
@@ -81,8 +81,8 @@ const Shop = (data) => {
                       </div>
                    
                   <div className="description">
-                  <p>{product.name}</p>
-                  <p>{product.price}</p>
+                  <p>{shoe.name}</p>
+                  <p>{shoe.price}</p>
                   </div>
                 </div>
               ))}
