@@ -46,7 +46,22 @@
     padding: 15px;
     box-shadow: 0px 0px 0px 1.7px rgba(0, 0, 0, 0.253);
 }
+.sociale{
+    /* margin-left: 562px; */
+    background-color: white;
+    display: flex;
+    gap:13px;
+    justify-content: center;
+}
 
+.sociale a{
+    color: black;
+    margin-top: 20px;
+    font-size: 22.5px;
+    text-align: center;
+    width: 33px;
+    
+}
 .social-media h2 {
     text-align: center;
     font-size: 15px;

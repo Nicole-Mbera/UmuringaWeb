@@ -59,9 +59,10 @@
 @media(max-width:912px){
     .row img{
         height: 30vh;
-        
+ 
     
     }
+    
 }
 @media(max-width:880px){
     .row{

@@ -2,59 +2,85 @@
     /* margin-top: 40px; */
     /* height: 30vh; */
     width: 100%;
-    background-color: grey;
 }
 
 .social{
     /* margin-left: 562px; */
-    padding-bottom: 3px;
-    /* background-color: blue; */
+    padding: 15px;
+    background-color: white;
+    box-shadow: rgba(128, 128, 128, 0.534) 1px 0px 3px;
     display: flex;
     gap:13px;
     justify-content: center;
 }
 
 .social a{
-color: black;
-    margin-top: 14px;
-    font-size: 23.5px;
+    margin-top: 20px;
+    font-size: 22.5px;
     text-align: center;
-    padding: 8px;
-    border: 1.1px solid black;
-    padding: 2px;
-    border-radius: 50%;
-    width: 45px;
+    width: 33px;
     
 }
 
-.stayConnected h1{
-    font-size: 16px;
-    font-weight: 350;
-    color: black;
-    text-align: center;
-}
 .stayConnected a{
     color: black;   
 }
 .navbarList{
-    /* background-color: rgb(230, 17, 17) ; */
-    padding: 30px;
+    background-color: black ;
     display: flex;
-    justify-content: center;
+     padding: 5px;
+    /* justify-content: center; */
 
 }
 .navbarList a{
-    float:inline-start;
-    padding: 27px;
-    color: black;
-    border: 1.3px solid black;
-    padding: 6px 15px;
-    border-radius: 50px;
+    margin-left: 35px;
+    color:white;
     text-decoration: none;
+    /* padding: 6px 15px; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    
-    margin-left: 5px;
     /* font-size: 15px; */
+}
+.no-bullets li{
+    margin-top: 5px;
+    list-style: none;
+    color: white;
+}
+.bullets{
+    display: flex;
+}
+.bullets li{
+    color: white;
+    list-style: none;
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 35px;
+}
+
+
+.lago img {
+    /* height: 5vh; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+
+}
+.more{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+.more:hover{
+   
+    color: rgb(0, 110, 255);
 }
 
 @media (max-width:612px){

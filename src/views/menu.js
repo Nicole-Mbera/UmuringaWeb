@@ -22,10 +22,12 @@ const Menu = () => {
     return (
 
         <div className="menu-container">
-            <a href="/home"> Home </a>
+            <a href="/Home"> Home </a>
             <hr></hr> <br></br>
             {/* <a href="/shop">Categories</a> */}
-            <a href="/shop">shoes</a>
+            
+            <a href="/About us">About us</a>
+            
             <hr></hr> <br></br> 
             {/* <button type="button" class="collapsible">Categories</button>
             <hr></hr> <br></br>
@@ -37,10 +39,9 @@ const Menu = () => {
                 <br></br> <br></br>
 
             </div> */}
-
-            <a href="/impact">About us</a>
+            <a href="/Shop">shoes</a>
             <hr></hr> <br></br>
-            <a href="/contact">Contact us</a>
+            <a href="/Contact">Contact us</a>
             <hr></hr> <br></br>
         </div>
     )

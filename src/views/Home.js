@@ -1,11 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Homelayout from '../components/homeLayout'
 import "./home.css"
 import slay from "../assets/images/far.mp4"
 import { Carousel } from 'react-responsive-carousel'
 import Shoes from "../assets/constants/sellers.json";
+import axios from 'axios'
+import { CircularProgress } from "@mui/material";
 
 const Home = () => {
+        const [showVisible, setShowVisible] = useState({});
+        const [spVisible, setSpVisible] = useState(false);
+      
+        const [products, setProducts] = useState([]);
+        const [isFetching, setIsFetching] = useState(false);
+      
+        const fetchProducts = () => {
+          setIsFetching(true);
+          axios
+            .get("http://localhost:7000/sellers/allproducts")
+            .then((res) => {
+              setProducts(res.data.data);
+              setIsFetching(false);
+            })
+            .catch((error) => {
+              console.log(error);
+              setIsFetching(false);
+            });
+        };
+      
+        useEffect(() => {
+          fetchProducts();
+        }, []);
     return (
         <Homelayout>
             <div className='home-container'>
@@ -32,37 +57,40 @@ const Home = () => {
 
                 <div className='best-sellers'>
 
-                    
-                    {Shoes.map((ketch) => (
+                {isFetching ? (
+            <center style={{ paddingTop: "100px", paddingLeft: "250px" }}>
+              <CircularProgress />
+            </center>
+          ) : (
+            <>
+              {products.map((product, Index) => (
+                <div className="container">
+                  
+                  <div className="carousel">
+                  <Carousel>
+                      {product.productPicture.map((images) => (
                         
-
-                        <div className="container">
-
-                            
-                                   <div className='carousel'>
-                                   
-                                    <Carousel>
-                                    {ketch.image.map((images, Index=0) => (
-                                     
-                                     
-                                      <img src={images}/>
-                                     
-                                     
-                                    ))}
-                                    </Carousel>
-                                
-                                </div>  
-                              
-
-                    
-                            <div className='description'>
-                            <p>{ketch.productName}</p>
-                            <p>{ketch.price}</p>
-                            </div>
-                            
-                        </div>
-                      
-                    ))}
+                          
+                          
+                          
+                          <img src={images} />
+                          
+                      ))}
+                      </Carousel>
+                        
+                     </div>
+                  
+                    {/* <img className="image" src={ketch.productPicture} /> */}
+                   
+        
+                  <div className="description">
+                  <p>{product.name}</p>
+                  <p>{product.price}</p>
+                  </div>
+                </div>
+              ))}
+            </>
+          )}
                 </div>
 
             </div>

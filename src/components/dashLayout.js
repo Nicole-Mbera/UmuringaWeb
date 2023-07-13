@@ -18,6 +18,8 @@ const DashLayout = ({ children }) => {
                 <ul className="icons">
                     <li><FolderOpenOutlined /> </li>
                     <li><ImportOutlined /></li>
+                    <li><FolderOpenOutlined /> </li>
+                    <li><ImportOutlined /></li>
                     {/* <li><ShoppingCartOutlined /></li> */}
                     {/* <li><TeamOutlined /> </li> */}
                    
@@ -27,6 +29,8 @@ const DashLayout = ({ children }) => {
         
                     <li> <a href="/manageProducts"> Manage product </a></li>
                     <li> <a href="/registerProducts">Register product </a></li>
+                    <li> <a href="/manageBestSellers"> Manage Best Sellers </a></li>
+                    <li> <a href="/registerBestSellers">Register a best seller </a></li>
                     {/* <li><a href="/dashOrders">Orders</a></li> */}
                     {/* <li> <a href="/users"> Customers</a></li> */}
                   
