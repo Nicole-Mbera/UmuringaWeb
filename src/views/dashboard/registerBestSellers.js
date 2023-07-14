@@ -15,7 +15,7 @@ const RegisterBestSellers = () => {
     console.log(name, description, price, productPicture);
 
     axios
-      .post("http://localhost:7000/Sellers/registerProduct", {
+      .post("https://tiny-blue-wildebeest-shoe.cyclic.app/sellers/registerProduct", {
         name,
         description,
         price,
