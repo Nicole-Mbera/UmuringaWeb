@@ -17,7 +17,7 @@ const Home = () => {
         const fetchProducts = () => {
           setIsFetching(true);
           axios
-            .get("http://localhost:7000/sellers/allproducts")
+            .get("https://tiny-blue-wildebeest-shoe.cyclic.app/sellers/allproducts")
             .then((res) => {
               setProducts(res.data.data);
               setIsFetching(false);

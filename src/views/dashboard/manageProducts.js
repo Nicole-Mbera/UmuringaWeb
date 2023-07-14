@@ -63,7 +63,7 @@ const Products = () => {
   const handleDelete = (id) => {
     console.log("id to delete", id);
     axios
-      .delete("http://localhost:7000/product/shoe/" + id)
+      .delete("https://tiny-blue-wildebeest-shoe.cyclic.app/product/shoe/" + id)
       .then((resp) => {
         setProduct(product.filter((item) => item._id != id));
         console.log(`Item with Id ${id} has been deleted!!`);
@@ -73,7 +73,7 @@ const Products = () => {
   const fetchProducts = () => {
     setIsFetching(true);
     axios
-      .get("http://localhost:7000/product/allproducts")
+      .get("https://tiny-blue-wildebeest-shoe.cyclic.app/product/allproducts")
       .then((res) => {
         setProduct(res.data.data);
         setIsFetching(false);
