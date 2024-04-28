@@ -26,7 +26,7 @@ const Menu = () => {
             <hr></hr> <br></br>
             {/* <a href="/shop">Categories</a> */}
             
-            <a href="/About us">About us</a>
+            <a href="/impact">About us</a>
             
             <hr></hr> <br></br> 
             {/* <button type="button" class="collapsible">Categories</button>

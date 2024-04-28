@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import DashLayout from "../../components/dashLayout";
 import "./registerProduct.css";
-import { Button, Upload, Input, Form } from "antd";
+import { Button, Input, Form } from "antd";
 
 const RegisterProduct = () => {
   const [name, setName] = useState("");
@@ -79,13 +79,14 @@ const RegisterProduct = () => {
                   message: "Please input price!",
                 },
               ]}
-            >
-              <Input
-                placeholder="price"
-                style={{ padding: "10px", width: "70%", marginTop:"20px" }}
-                value={price} 
-                onChange={(e) => setPrice(e.target.value)}
-              />
+            > 
+            
+            <Input
+  placeholder="price"
+  style={{ padding: "10px", width: "70%", marginTop:"20px" }}
+  value={price.toLocaleString()} 
+  onChange={(e) => setPrice(e.target.value)}
+/>
             </Form.Item>
             
             <Form.Item name="productPicture">

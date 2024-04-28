@@ -1,11 +1,8 @@
 .footerContainer{
-    /* margin-top: 40px; */
-    /* height: 30vh; */
     width: 100%;
 }
 
 .social{
-    /* margin-left: 562px; */
     padding: 15px;
     background-color: white;
     box-shadow: rgba(128, 128, 128, 0.534) 1px 0px 3px;
@@ -25,15 +22,25 @@
 .stayConnected a{
     color: black;   
 }
+.lago{
+    padding-left: 25px;
+}
+.lago img {
+    height: 18vh;
+    width: 100%;
+    object-fit: cover;
+    
+
+}
 .navbarList{
     background-color: black ;
     display: flex;
-     padding: 5px;
+     /* padding: 5px; */
     /* justify-content: center; */
 
 }
 .navbarList a{
-    margin-left: 35px;
+    font-size: medium;
     color:white;
     text-decoration: none;
     /* padding: 6px 15px; */
@@ -65,14 +72,6 @@
 }
 
 
-.lago img {
-    /* height: 5vh; */
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    
-
-}
 .more{
     cursor: pointer;
     color: white;
@@ -84,8 +83,15 @@
 }
 
 @media (max-width:612px){
+    .lago{
+        padding-left: 5px;
+    }
+    .flex{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
     .navbarList {
-        padding: 18px;
+        margin-left: 0px;
         
     }
     .navbarList a{

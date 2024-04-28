@@ -85,7 +85,7 @@ const Home = () => {
         
                   <div className="description">
                   <p>{product.name}</p>
-                  <p>{product.price}</p>
+                  <p>{product.price} RWF</p>
                   </div>
                 </div>
               ))}

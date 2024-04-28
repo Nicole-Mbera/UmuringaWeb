@@ -1,13 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Homelayout from "../components/homeLayout";
 import "./contact.css";
 import EmailSharpIcon from '@mui/icons-material/EmailSharp';
 import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import LocationOnSharpIcon from '@mui/icons-material/LocationOnSharp';
-import { FormGroup, Button, TextareaAutosize, Input } from '@mui/material';
+import { Button, Upload, Input, Form, message as antdMessage} from "antd";
 import { InstagramOutlined, FacebookOutlined, WhatsAppOutlined, LinkedinOutlined,PhoneOutlined } from "@ant-design/icons";
 
 const Contact = () => {
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [telephone, setTelephone] = useState("");
+    const [message, setMessage] = useState("");
+  
+    const handleMessage = async (e) => {
+      e.preventDefault();
+      console.log(name, email, telephone, message);
+  
+      axios
+        .post("https://tiny-blue-wildebeest-shoe.cyclic.app/message/SendMessage", {
+          name,
+          email,
+          telephone,
+          message,
+        })
+        .then((response) => {
+          setName("");
+          setEmail("");
+          setTelephone("");
+          setMessage("");
+          antdMessage.success({
+            content: "Message sent successfully!",
+            style: { marginTop: "20px" }, // Adjust the styling
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+          antdMessage.error({
+            content: "Message sending failed. Please try again later.",
+            style: { marginTop: "20px" }, // Adjust the styling
+          });
+        });
+    };
     return (
         <Homelayout>
                
@@ -35,32 +71,78 @@ const Contact = () => {
                         </div>
 
                         <div className="comments">
-                            <FormGroup className="form">
-                                <Input placeholder="Name" style={{ marginTop: "20px" }} />
-                                <Input placeholder="Email" style={{ marginTop: "20px" }} />
-                                <Input placeholder="Telephone" style={{ marginTop: "20px" }} />
+                        <Form>
+          <Form.Item
+              name="name"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your name!",
+                },
+              ]}
+            >
+              <Input
+                placeholder="name"
+                style={{ padding: "10px", width: "70%", marginTop:"10px" }}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </Form.Item>
+            
+            <Form.Item
+              name="email"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your email!",
+                },
+              ]}
+            >
+              <Input
+                placeholder="email"
+                style={{ padding: "10px", width: "70%", marginTop:"10px" }}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Item>
+            <Form.Item
+              name="telephone"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input telephone!",
+                },
+              ]}
+            >
+              <Input
+                placeholder="telephone"
+                style={{ padding: "10px", width: "70%", marginTop:"10px" }}
+                value={telephone} 
+                onChange={(e) => setTelephone(e.target.value)}
+              />
+            </Form.Item>
+            
+            <Form.Item name="message">
+              <Input
+                placeholder="message"
+                style={{ padding: "10px", width: "70%", marginTop: "10px" }}
+                value={message} // Display the array as comma-separated strings
+                onChange={(e) => setMessage(e.target.value)} // Split the string into an array of strings
+              />
+            </Form.Item>
 
-                                <TextareaAutosize
-                                    maxRows={4}
-                                    aria-label="maximum height"
-                                    placeholder="Type your message"
-
-                                    style={{ height: "20vh", marginTop: "35px" }}
-                                />
-                                <br></br>
-                                <Button variant="contained" href="#"
-                                    style={{
-                                        width: 150,
-                                        color: "black",
-                                        backgroundColor: "grey ",
-                                        border: "none",
-                                        borderRadius: "10px",
-                                    }}
-                                >
-                                    Send
-                                </Button>
-
-                            </FormGroup>
+            {/* ...other form items */}
+            
+            <Button type="primary" htmlType="submit" onClick={handleMessage} style={{ marginTop: "20px", padding: "10px",
+        color: "black",
+        backgroundColor: "grey",
+        border: "none",
+        width: "130px",
+        borderRadius: "10px",
+    }}>
+              Submit
+            </Button>
+          </Form>
 
                         </div>
                     </div>

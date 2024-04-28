@@ -82,7 +82,8 @@ const Shop = (data) => {
                    
                   <div className="description">
                   <p>{shoe.name}</p>
-                  <p>{shoe.price}</p>
+                  <p>{shoe.price} RWF</p>
+                
                   </div>
                 </div>
               ))}
