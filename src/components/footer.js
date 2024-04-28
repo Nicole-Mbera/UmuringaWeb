@@ -22,13 +22,13 @@ const Footer = () => {
             {/* <hr className="line"></hr> */}
             <div className="flex">
             
-            <div className="logo">
+            <div className="lago">
           <img src={logo} />
 
         </div>
             <div className="navbarList"> 
                 <ul className="no-bullets">
-                <li><a> QUICK LINKS</a></li>
+                    <li><a>QUICK LINKS</a></li>
                     <li><a href="/home"> Home </a></li>
                     <li><a href="/shop"> Shop</a></li>
                     <li><a href="/about"> About us </a></li>

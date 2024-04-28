@@ -30,12 +30,13 @@ const imageData = [
   }
 ];
 
-const renderSlides = imageData.map((image) => (
+const renderSlides = imageData.map((image, index) => (
   <div key={image.alt}>
     <img src={image.url} alt={image.alt} />
-    <p className="legend">{image.label}</p>
   </div>
 ));
+
+
 
 export default function App() {
   const [currentIndex, setCurrentIndex] = useState();

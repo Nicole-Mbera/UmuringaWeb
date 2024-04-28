@@ -12,6 +12,7 @@ import RegisterBestSellers from "../views/dashboard/registerBestSellers";
 import Cart from "../views/cart";
 import Order from "../views/order";
 import App from "../views/carousel";
+import Messages from "../views/dashboard/messages";
 
 
 const Index=()=>{
@@ -30,7 +31,8 @@ const Index=()=>{
         <Route exact path="/registerProducts" element={<RegisterProduct/>}/>
         <Route exact path="/registerBestSellers" element={<RegisterBestSellers />}/>
         <Route exact path="/manageBestSellers" element={<BestSellersProducts/>}/>
-        <Route exact path="//manageProducts" element={<Products/>}/>
+        <Route exact path="/messages" element={<Messages/>}/>
+        <Route exact path="/manageProducts" element={<Products/>}/>
         
     </Routes>
     )
